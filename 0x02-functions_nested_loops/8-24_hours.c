@@ -32,7 +32,7 @@ void jack_bauer(void)
 			m_2 = 0;
 			m_1++;
 		}
-		if (m_2 > 5)
+		if (m_1 > 5)
 		{
 			m_2 = 0;
 			h_2++;
