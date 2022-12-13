@@ -34,7 +34,7 @@ void jack_bauer(void)
 		}
 		if (m_1 > 5)
 		{
-			m_2 = 0;
+			m_1 = 0;
 			h_2++;
 		}
 		if (h_2 > 9)
