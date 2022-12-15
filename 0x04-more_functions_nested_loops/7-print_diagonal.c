@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * print_line - returns a line
+ * print_diagonal - returns a line
  * @n: number on lines
  * Return: 0 or 1
 */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int a;
 	int b;
