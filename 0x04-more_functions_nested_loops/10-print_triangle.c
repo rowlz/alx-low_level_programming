@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * print_square - returns a line
+ * print_triangle - returns a line
  * @size: number on lines
  * Return: 0 or 1
 */
 
-void print_square(int size)
+void print_triangle(int size)
 {
 	int a;
 	int b;
