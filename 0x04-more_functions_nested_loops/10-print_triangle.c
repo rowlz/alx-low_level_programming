@@ -22,7 +22,7 @@ void print_triangle(int size)
 	for (i = 0; i < size; i++)
 	{
 		a = a + 1;
-		b = b + 1;
+		b = b - 1;
 
 		for (d = b; d > 0; d--)
 		{
