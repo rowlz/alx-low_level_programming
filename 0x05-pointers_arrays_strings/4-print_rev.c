@@ -13,7 +13,7 @@ void print_rev(char *s)
 	int a;
 	int loop;
 
-	for (a = 0; s[a] != '\0'; ++a)
+	for (a = 0; s[a] != '\0'; a++)
 	{
 
 	}
@@ -22,7 +22,7 @@ void print_rev(char *s)
 
 	for (; loop >= 0; loop--)
 	{
-		printf("%c", s[loop]);
+		_putchar(s[loop]);
 	}
-	printf("\n");
+	_putchar('\n');
 }
