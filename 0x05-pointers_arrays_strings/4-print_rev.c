@@ -11,18 +11,18 @@
 void print_rev(char *s)
 {
 	int a;
-	int b;
+	int loop;
 
 	for (a = 0; s[a] != '\0'; ++a)
 	{
 
 	}
 
-	b = a;
+	loop = a;
 
-	for (; s[b] <= b; --b)
+	for (; loop >= 0; loop--)
 	{
-		printf("%c",s[b]);
+		printf("%d",s[loop]);
 	}
 
 	printf("\n");
