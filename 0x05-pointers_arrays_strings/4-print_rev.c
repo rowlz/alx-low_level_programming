@@ -22,8 +22,6 @@ void print_rev(char *s)
 
 	for (; loop >= 0; loop--)
 	{
-		printf("%c",s[loop]);
+		printf("%c", s[loop]);
 	}
-
-	printf("\n");
 }
