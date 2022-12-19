@@ -18,10 +18,10 @@ void print_rev(char *s)
 
 	}
 
-	int b = a;
+	b = a;
 
 	for (; s[b] <= b; --b)
 	{
-		print(s[b]);
+		printf(s[b]);
 	}
 }
