@@ -10,7 +10,7 @@
 
 int _strlen(char *s)
 {
-	char word_phrase = s;
+	char word_phrase = *s;
 	char new_string[] = word_phrase;
 	int a;
 
