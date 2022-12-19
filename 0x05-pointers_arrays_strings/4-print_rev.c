@@ -22,8 +22,8 @@ void print_rev(char *s)
 
 	for (; s[b] <= b; --b)
 	{
-		printf("%s",s[b]);
+		printf("%d",s[b]);
 	}
 
-	printf('\n');
+	printf("\n");
 }
