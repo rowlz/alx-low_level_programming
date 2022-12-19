@@ -24,6 +24,5 @@ void print_rev(char *s)
 	{
 		printf("%c", s[loop]);
 	}
-
-	printf('\n');
+	printf("\n");
 }
