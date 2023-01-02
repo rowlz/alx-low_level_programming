@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_chessboard - print chessbrd
+ * print_chessboard - print chessbrd
  * @a: 2d arrays
  */
 
