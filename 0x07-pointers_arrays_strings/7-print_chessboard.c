@@ -5,7 +5,7 @@
  * @a: 2d arrays
  */
 
-void print_chessboard(char (*a)[8]);
+void print_chessboard(char (*a)[8])
 {
 	int r, c;
 
