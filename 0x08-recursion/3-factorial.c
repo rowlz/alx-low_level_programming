@@ -6,7 +6,7 @@
  * Return: The string value
  */
 
-int factorial(int n);
+int factorial(int n)
 {
 	int fact = 0;
 
