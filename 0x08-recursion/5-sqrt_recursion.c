@@ -1,20 +1,32 @@
 #include "main.h"
 
 /**
- * _pow_recursion - returs a power
- * @x: number
- * @y: power
+ * _sqrt_recursion - returs asquare
+ * @n: number
  * Return: x power of y
  */
 
-int _pow_recursion(int x, int y)
+int _sqrt_recursion(int n)
 {
-	if (y < 0)
-		return (-1);
-	else if (y == 0)
-		return (1);
-	else if (y == 1)
-		return (x);
+	return (_sqrt(n, 1))
+}
 
-	return (x * _pow_recursion(x, y -1));
+/**
+ * _sqrt_f - to use in the function above
+ * @c: number
+ * @i: to increase by
+ * Return: sqr root
+ */
+
+int _sqrt_f(int c, int i)
+{
+	int square;
+
+	square = i * i;
+	if (square == c)
+		return (i);
+	else if (square < c)
+		return (_sqrt(c, i + 1));
+	else
+		return (-1);
 }
