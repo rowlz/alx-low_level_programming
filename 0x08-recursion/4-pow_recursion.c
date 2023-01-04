@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * factorial - prints out a string with recursion
- * @n: string
- * Return: The string value
+ * _pow_recursion - returs a power
+ * @x: number
+ * @y: power
+ * Return: x power of y
  */
 
-int factorial(int n)
+int _pow_recursion(int x, int y)
 {
-	int fact = 0;
-
-	if (n < 0)
+	if (y < 0)
 		return (-1);
-	else if (n < 2)
-		return (n);
-	fact = n * factorial(n -1);
+	else if (y == 0)
+		return (1);
+	else if (y == 1)
+		return (x);
 
-	return (fact);
+	return (x * _pow_recursion(x, y -1));
 }
