@@ -26,7 +26,7 @@ int _sqrt_f(int c, int i)
 	if (square == c)
 		return (i);
 	else if (square < c)
-		return (_sqrt(c, i + 1));
+		return (_sqrt_f(c, i + 1));
 	else
 		return (-1);
 }
