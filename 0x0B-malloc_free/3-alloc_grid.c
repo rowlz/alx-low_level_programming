@@ -31,7 +31,7 @@ int **alloc_grid(int width, int height)
 		}
 	}
 
-	**grid_done = new_grid;
+	grid_done = new_grid;
 
 
 	return (grid_done);
