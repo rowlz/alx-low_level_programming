@@ -21,16 +21,6 @@ char *str_concat(char *s1, char *s2)
 
 	char *new_string = (char *)malloc(sizeof(char) * total_len + 1);
 
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
-
 	if (new_string == NULL)
 	{
 		return (NULL);
@@ -38,11 +28,19 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < s1_len; i++)
 	{
+		if (s1 == NULL)
+		{
+			s1[i] = "";
+		}
 		new_string[i] = s1[i];
 	}
 
 	for (j = 0; j < s2_len; j++)
 	{
+		if (s2 == NULL)
+		{
+			s2[j] = "";
+		}
 		new_string[i] = s2[j];
 		i++;
 	}
