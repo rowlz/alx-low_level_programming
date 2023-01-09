@@ -42,10 +42,13 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (s2 == NULL)
 		{
-			*s2[j] = "";
+			new_string[i] = '\0';
 		}
-		new_string[i] = s2[j];
-		i++;
+		else
+		{
+			new_string[i] = s2[j];
+			i++;
+		}
 	}
 
 	return (new_string);
