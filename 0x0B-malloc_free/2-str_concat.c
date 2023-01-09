@@ -26,29 +26,20 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
+	if (s1 == NULL)
+	{
+		new_string[0] = '\0';
+	}
+
 	for (i = 0; i < s1_len; i++)
 	{
-		if (s1 == NULL)
-		{
-			new_string[0] = '\0';
-		}
-		else
-		{
-			new_string[i] = s1[i];
-		}
+		new_string[i] = s1[i];
 	}
 
 	for (j = 0; j < s2_len; j++)
 	{
-		if (s2 == NULL)
-		{
-			new_string[i] = '\0';
-		}
-		else
-		{
-			new_string[i] = s2[j];
-			i++;
-		}
+		new_string[i] = s2[j];
+		i++;
 	}
 
 	return (new_string);
