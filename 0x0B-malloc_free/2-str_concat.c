@@ -19,6 +19,12 @@ char *str_concat(char *s1, char *s2)
 	int s2_len;
 	int total_len;
 
+	s1_len = strlen(s1);
+	s2_len = strlen(s2);
+	total_len = s1_len + s2_len;
+
+	char *new_string = (char *)malloc(sizeof(char) * total_len + 1);
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -28,12 +34,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-
-	s1_len = strlen(s1);
-	s2_len = strlen(s2);
-	total_len = s1_len + s2_len;
-
-	char *new_string = (char *)malloc(sizeof(char) * total_len);
 
 	if (new_string == NULL)
 	{
