@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (s1 == NULL)
 		{
-			s1[i] = "";
+			*s1[i] = "";
 		}
 		new_string[i] = s1[i];
 	}
@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (s2 == NULL)
 		{
-			s2[j] = "";
+			*s2[j] = "";
 		}
 		new_string[i] = s2[j];
 		i++;
