@@ -9,7 +9,7 @@
  * Return: Null is str = NULL or insufficient memory
 */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	int dup_string_len = strlen(str);
 	char *dup_string = (char *)malloc(sizeof(char) * dup_string_len);
