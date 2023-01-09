@@ -16,7 +16,7 @@ int **alloc_grid(int width, int height)
 	int j;
 	int **grid_done;
 
-	int *new_grid = (int *)malloc(sizeof(int) * width * height);
+	int *new_grid = (int *)malloc(sizeof(int) * (width * height));
 
 	if (width  == 0 || height == 0)
 	{
@@ -31,7 +31,7 @@ int **alloc_grid(int width, int height)
 		}
 	}
 
-	grid_done =(int **)new_grid;
+	grid_done = (int **)new_grid;
 
 
 	return (grid_done);
