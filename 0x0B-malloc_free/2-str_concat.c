@@ -36,16 +36,16 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; i < s1_len; i++)
 	{
+		new_string[i] = s1[i];
 	}
 
-	for (j = 0; s2[j] != '\0'; j++)
+	for (j = 0; j < s2_len; j++)
 	{
-		s1[i] = s2[j];
+		new_string[i] = s2[j];
 		i++;
 	}
-	new_string[i] = s1[i];
 
 	return (new_string);
 
