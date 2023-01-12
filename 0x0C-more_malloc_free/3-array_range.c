@@ -21,7 +21,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	new_array = (int *)malloc(sizeof(int) * ndiff + 1);
+	new_array = malloc(sizeof(int) * (ndiff + 1));
 
 	if (new_array == NULL)
 	{
