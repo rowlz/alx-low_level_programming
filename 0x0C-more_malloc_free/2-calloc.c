@@ -13,6 +13,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *new_array = (char *)malloc(sizeof(char) * size);
+	unsigned int i;
 
 	if (nmemb == 0)
 	{
@@ -24,5 +25,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (0);
 	}
 
-	new_array[nmemb];
+	for (i = 0; i < nmemb; i++)
+	{
+		new_array[i] = 0;
+	}
+
+	return (0);
 }
