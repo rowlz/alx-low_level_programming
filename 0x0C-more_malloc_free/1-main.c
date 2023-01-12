@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	ret = strtoul(argv[1], &ptr, 10);
 
-	concat = string_nconcat("Best ", "School !!!", ret);
+	concat = string_nconcat("Best ", "SchoolMean", ret);
 	printf("%s\n", concat);
 	free(concat);
 	return (0);
