@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * realloc - reallocating a memory
+ * _realloc - reallocating a memory
  * @ptr: pointer
  * @old_size: old size
  * @new_size: mew size
