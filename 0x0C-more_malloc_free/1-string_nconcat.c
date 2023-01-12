@@ -14,10 +14,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int string_one_len = strlen(s1);
 	unsigned int string_two_len = strlen(s2);
-	unsigned int total_len = string_one_len + string_two_len;
 	unsigned int i, j;
 
-	char *new_string = (char *)malloc(sizeof(char) * total_len);
+	char *new_string = (char *)malloc(sizeof(char) * string_one_len + n + 1);
 
 	if (new_string == NULL)
 	{
