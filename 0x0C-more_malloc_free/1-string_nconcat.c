@@ -26,11 +26,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 	{
-		s1 = " ";
+		s1 = "";
 	}
 	else if (s2 == NULL)
 	{
-		s2 = " ";
+		s2 = "";
 	}
 
 	for (i = 0; i < string_one_len; i++)
@@ -53,6 +53,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			new_string[i] = s2[j];
 			i++;
 		}
+		new_string[i] = '\0';
 	}
 	return (new_string);
 
