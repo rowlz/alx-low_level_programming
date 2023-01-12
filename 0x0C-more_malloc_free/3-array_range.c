@@ -18,7 +18,7 @@ int *array_range(int min, int max)
 
 	if (min > max)
 	{
-		return (0);
+		return (NULL);
 	}
 
 	new_array = (int *)malloc(sizeof(int) * ndiff + 1);
