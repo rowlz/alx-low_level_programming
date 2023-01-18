@@ -10,7 +10,7 @@
  * Return: 0
  */
 
-iny main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a, b;
 	int (*o)(int, int);
