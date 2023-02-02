@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * set_bit - print binary of a decimal
+ * clear_bit - print binary of a decimal
  * @n: number
  * @index: index
  * Return: value bit
