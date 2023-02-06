@@ -14,10 +14,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file_open;
 	ssize_t read_count, write_count;
-	char* buffer
+	char* buffer;
 
-		if (filename, O_RDWR)
-			return (0);
+	if (filename == NULL)
+		return (0);
 
 	file_open = open(filename, O_RDWR);
 	if (file_open == -1)
